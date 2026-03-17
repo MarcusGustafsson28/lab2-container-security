@@ -22,3 +22,12 @@ I denna labb har vi undersökt container-säkerhet och Kubernetes policy enforce
 
 ### Scan After
 ![Scan After](images/scan-after.png)
+
+
+## Reflektion
+Labben har visat hur viktigt det är med säkerhet i hela container-livscykeln, från base image till applikation. Sårbara images kan snabbt innehålla CVE:er, medan hardenade images med uppdaterade paket och non-root users minskar riskerna. Healthchecks och mindre images bidrar också till stabilitet och säkerhet.
+
+SBOM är viktigt eftersom det ger en tydlig översikt över alla komponenter i en image, vilket underlättar vid compliance och snabba åtgärder när sårbarheter upptäcks. 
+
+Gatekeeper tvingar team att följa policyer innan pods skapas, vilket gör säkerhet till en integrerad del av workflowen. Det förhindrar misstag och säkerställer att kubernetes-resurser alltid uppfyller företagets krav.
+
